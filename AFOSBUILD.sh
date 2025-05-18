@@ -10,7 +10,7 @@ else
 fi
 
 
-PIPX_HOME=/opt/ANDRAX/pipx PIPX_BIN_DIR=/opt/ANDRAX/pipx/bin PIPX_MAN_DIR=/opt/ANDRAX/pipx/man /opt/ANDRAX/python3.13/bin/pipx install --force "git+https://github.com/snakesec/dnschef-ng.git#egg=dnschef-ng[api]"
+PIPX_HOME=/opt/ANDRAX/pipx PIPX_BIN_DIR=/opt/ANDRAX/pipx/bin PIPX_MAN_DIR=/opt/ANDRAX/pipx/man /opt/ANDRAX/python3.13/bin/pipx install --force ".[api]"
 
 if [ $? -eq 0 ]
 then
